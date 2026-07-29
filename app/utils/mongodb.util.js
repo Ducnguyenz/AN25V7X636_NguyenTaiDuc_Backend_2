@@ -19,7 +19,7 @@ class MongoDB {
       );
       try {
         const onlineUri =
-          "mongodb+srv://admin:135790@cluster0.0c2wwgf.mongodb.net/contactbook?appName=Cluster0";
+          "mongodb+srv://admin:4v23uAba37fWTBW@cluster0.0c2wwgf.mongodb.net/contactbook?appName=Cluster0";
         // sẽ xóa tài khoản truy cập này sao 2 tháng
         this.client = await MongoClient.connect(onlineUri);
         console.log("Kết nối MongoDB Web Online thành công!");
