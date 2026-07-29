@@ -1,0 +1,68 @@
+### 1. TẠO LIÊN HỆ MỚI SỐ 1 (Đức - Có yêu thích)
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+    "name": "Nguyen Tai Duc",
+    "email": "ducnguyen@example.com",
+    "address": "An Giang",
+    "phone": "0123456789",
+    "favorite": true
+}
+
+### TẠO LIÊN HỆ MỚI SỐ 2
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+    "name": "Le Thi Mai",
+    "email": "maile@example.com",
+    "address": "Can Tho",
+    "phone": "0987654321",
+    "favorite": true
+}
+### TẠO LIÊN HỆ MỚI SỐ 3
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+
+{
+    "name": "Tran Minh Hoang",
+    "email": "hoangtran@example.com",
+    "address": "Vinh Long",
+    "phone": "0912345678",
+    "favorite": false
+}
+
+
+### 3. LẤY TOÀN BỘ DANH SÁCH LIÊN HỆ (findAll)
+GET http://localhost:3000/api/contacts
+
+
+### 4. TÌM KIẾM LIÊN HỆ THEO TÊN (findByName)
+GET http://localhost:3000/api/contacts?name=Duc
+
+
+### 5. LẤY DANH SÁCH LIÊN HỆ YÊU THÍCH (findAllFavorite)
+GET http://localhost:3000/api/contacts/favorite
+
+
+### 6. XEM CHI TIẾT MỘT LIÊN HỆ THEO ID (findOne)
+GET http://localhost:3000/api/contacts/6a2438454958bdbe9169a837
+
+
+### 7. CẬP NHẬT THÔNG TIN LIÊN HỆ THEO ID (update)
+PUT http://localhost:3000/api/contacts/6a2438454958bdbe9169a837
+Content-Type: application/json
+
+{
+    "address": "An Giang, Việt Nam",
+    "favorite": false
+}
+
+
+### 8. XÓA MỘT LIÊN HỆ THEO ID (delete)
+DELETE http://localhost:3000/api/contacts/6a24316b4958bdbe9169a7ef
+
+
+### 9. XÓA SẠCH TOÀN BỘ DANH BẠ TRONG DATABASE (deleteAll)
+DELETE http://localhost:3000/api/contacts

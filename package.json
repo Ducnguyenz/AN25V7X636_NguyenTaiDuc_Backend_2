@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-sandbox",
+  "version": "1.0.0",
+  "description": "CT449: Phát triển ứng dụng Web - LAB 1 Học kỳ 3, Năm học: 2026-2027",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "AN25V7X636_NguyenTaiDuc",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongodb": "^6.21.0"
+  }
+}
